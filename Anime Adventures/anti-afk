@@ -1,0 +1,9 @@
+repeat wait() until game:IsLoaded()
+local VirtualUser=game:service'VirtualUser'
+repeat
+wait()
+until game:GetService("Players").LocalPlayer ~= nil and game:GetService("Players").LocalPlayer.Idled ~= nil
+game:GetService("Players").LocalPlayer.Idled:connect(function()
+VirtualUser:CaptureController()
+VirtualUser:ClickButton2(Vector2.new())
+end)
