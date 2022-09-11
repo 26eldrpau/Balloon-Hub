@@ -1,0 +1,10 @@
+_G.loop = true
+
+while _G.loop do
+   for i, v in next, game.Players:GetPlayers() do
+local ohInstance1 = workspace:WaitForChild(v.Name)
+game:GetService("ReplicatedStorage").Remotes.Attack:FireServer(ohInstance1)
+end
+
+   wait() -- delay to prevent crashing
+end
