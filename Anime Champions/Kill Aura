@@ -1,4 +1,5 @@
+while wait(.1) do
 for i, v in next, game.Players:GetPlayers() do
 local ohInstance1 = workspace:WaitForChild(v.Name)
 game:GetService("ReplicatedStorage").Remotes.Attack:FireServer(ohInstance1)
-end
+end end
