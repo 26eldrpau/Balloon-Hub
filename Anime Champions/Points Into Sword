@@ -1,0 +1,4 @@
+        wait(.1)
+        local ohString2 = "BladeSkill"
+
+        game:GetService("ReplicatedStorage").Data.IncreaseSkill:FireServer(ohString2)
