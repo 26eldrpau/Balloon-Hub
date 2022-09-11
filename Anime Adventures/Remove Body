@@ -1,0 +1,4 @@
+if not game:IsLoaded() then game.Loaded:Wait() end
+    for i, v in next, game.Players:GetPlayers() do
+workspace:WaitForChild(v.Name):FindFirstChild'CharacterMesh':Destroy()
+end
