@@ -1,0 +1,5 @@
+while wait(.1) do
+for i, v in next, game.Players:GetPlayers() do
+workspace:WaitForChild(v.Name).Abilities.PrimaryAbility:FireServer()
+workspace:WaitForChild(v.Name).Abilities.SecondaryAbility:FireServer()
+end
