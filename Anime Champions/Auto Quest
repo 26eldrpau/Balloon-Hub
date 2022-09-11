@@ -1,0 +1,9 @@
+while wait(10) do
+local ohString1 = "ChichaQuest"
+
+game:GetService("ReplicatedStorage").Remotes.GetQuest:FireServer(ohString1)
+wait()
+local ohString1 = "ChichaQuest"
+
+game:GetService("ReplicatedStorage").Remotes.ClaimQuest:FireServer(ohString1)
+end
