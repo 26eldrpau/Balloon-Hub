@@ -1,0 +1,7 @@
+    local v = Times
+    for i = 1, v do
+       wait(3)
+       local ohString1 = "dbz_fighter"
+       local ohString2 = "gems"
+       
+       game:GetService("ReplicatedStorage").endpoints.client_to_server.buy_random_fighter:InvokeServer(ohString1, ohString2)
