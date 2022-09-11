@@ -1,4 +1,9 @@
-  for i, v in next, game.Players:GetPlayers() do
+_G.loop = true
+
+while _G.loop do
+     for i, v in next, game.Players:GetPlayers() do
   workspace:WaitForChild(v.Name).Abilities.PrimaryAbility:FireServer()
   workspace:WaitForChild(v.Name).Abilities.SecondaryAbility:FireServer()
+end
+   wait() -- delay to prevent crashing
 end
