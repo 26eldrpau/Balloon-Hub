@@ -1,0 +1,13 @@
+_G.loop = false
+
+while _G.loop do
+   wait(10)
+local ohString1 = "ChichaQuest"
+
+game:GetService("ReplicatedStorage").Remotes.GetQuest:FireServer(ohString1)
+wait()
+local ohString1 = "ChichaQuest"
+
+game:GetService("ReplicatedStorage").Remotes.ClaimQuest:FireServer(ohString1)
+   wait() -- delay to prevent crashing
+end
