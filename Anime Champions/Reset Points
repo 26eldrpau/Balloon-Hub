@@ -1,0 +1,2 @@
+local ohString4 = "Reset"
+game:GetService("ReplicatedStorage").Data.IncreaseSkill:FireServer(ohString4)
