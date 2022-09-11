@@ -1,0 +1,5 @@
+while wait(.1) do
+local ohString1 = "BladeSkill"
+
+game:GetService("ReplicatedStorage").Data.IncreaseSkill:FireServer(ohString1)
+end
