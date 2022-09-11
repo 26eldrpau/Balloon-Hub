@@ -1,0 +1,172 @@
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/bloodball/-back-ups-for-libs/main/cat"))() --you can go into the github link and copy all of it and modify it for yourself.
+local Window = Library:CreateWindow("Balloon Hub", Vector2.new(492, 598), Enum.KeyCode.LeftAlt) --you can change your UI keybind
+local MainTab = Window:CreateTab("Main")
+local Settings = Window:CreateTab("Settings")
+-----Main----------Main----------Main----------Main----------Main-----
+MainTopLeft1 = MainTab:CreateSector("Skill Points", "left")
+local MainTopLeft = MainTab:CreateSector("Main On", "left")
+local MainMidLeft = MainTab:CreateSector("Main Off", "left")
+local MainTopRight = MainTab:CreateSector("Opens Blades", "right")
+local MainMidRight = MainTab:CreateSector("Opens Characters", "right")
+local MainBottomRight = MainTab:CreateSector("Teleports", "right")
+
+MainTopLeft1:AddButton("Reset Points", function(resetpoints)
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/26eldrpau/Balloon-Hub/main/Anime%20Champions/Reset%20Points"))()
+end)
+MainTopLeft1:AddTextbox("Points Into Blade", nil, function(State1)
+    local v = State1
+    for i = 1, v do
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/26eldrpau/Balloon-Hub/main/Anime%20Champions/Points%20Into%20Sword"))()
+    end
+end)  
+--- 
+MainTopLeft1:AddTextbox("Points Into Endurance", nil, function(State2)
+    local v = State2
+    for i = 1, v do
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/26eldrpau/Balloon-Hub/main/Anime%20Champions/Points%20Into%20Endurance"))()
+    end
+end)
+--- 
+MainTopLeft1:AddTextbox("Points Into Ability", nil, function(State3)
+    local v = State3
+    for i = 1, v do
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/26eldrpau/Balloon-Hub/main/Anime%20Champions/Points%20Into%20Ability"))()
+    end
+end)
+-----
+MainTopLeft:AddButton("Kill Aura On", function(killaura)
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/26eldrpau/Balloon-Hub/main/Anime%20Champions/Kill%20Aura%20On"))()
+end)
+---
+MainTopLeft:AddButton("Auto Ability On", function(autoability)
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/26eldrpau/Balloon-Hub/main/Anime%20Champions/Auto%20Ability%20On"))()
+end)
+---
+MainTopLeft:AddButton("Auto Quest On", function(autoquest)
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/26eldrpau/Balloon-Hub/main/Anime%20Champions/Auto%20Quest%20On"))()
+end)
+-----
+MainMidLeft:AddButton("Kill Aura Off", function(killaura2)
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/26eldrpau/Balloon-Hub/main/Anime%20Champions/Kill%20Aura%20Off"))()
+end)
+---
+MainMidLeft:AddButton("Auto Ability Off", function(autoability2)
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/26eldrpau/Balloon-Hub/main/Anime%20Champions/Auto%20Ability%20Off"))()
+end)
+---
+MainMidLeft:AddButton("Auto Quest Off", function(autoquest2)
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/26eldrpau/Balloon-Hub/main/Anime%20Champions/Auto%20Quest%20Off"))()
+end)
+-----
+-----
+
+MainTopRight:AddDropdown(Swords, {"Tier1Blades", "Tier2Blades", "Tier3Blades", "Tier4Blades", "Tier5Blades", "Tier6Blades"}, default, false, function(bladess)
+    bladevalue = bladess
+end)
+MainTopRight:AddButton("Open Sword", function()
+    local A_1 = bladevalue
+    local A_2 = "Yen"
+    local Event = game:GetService("ReplicatedStorage").Remotes.RollBlade:FireServer(A_1, A_2)
+    Event:InvokeServer(A_1, A_2)
+    end)
+----------
+MainMidRight:AddDropdown(Heros, {"Tier1Hero", "Tier2Hero", "Tier3Hero", "Tier4Hero", "Tier5Hero", "Tier6Hero"}, default, false, function(heross)
+    herovalue = heross
+end)
+MainMidRight:AddButton("Open Hero", function()
+    local A_3 = herovalue
+    local A_4 = "Yen"
+    local Event = game:GetService("ReplicatedStorage").Remotes.RollHero:FireServer(A_3, A_4)
+    Event:InvokeServer(A_3, A_4)
+    end)
+-----
+MainBottomRight:AddButton("Spawn Area", function(tp0)
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(273.691711, -91.0000153, 843.738647, -0.999668241, 8.67340049e-08, -0.025756849, 8.70159198e-08, 1, -9.8245021e-09, 0.025756849, -1.20624986e-08, -0.999668241)
+end)
+---
+MainBottomRight:AddButton("Area 1", function(tp1)
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-22.3000011, 4.19999886, 40.3614349, 1, -1.15364052e-09, 8.66896188e-16, 1.15364052e-09, 1, -8.34899296e-08, -7.70578801e-16, 8.34899296e-08, 1)
+end)
+---
+MainBottomRight:AddButton("Area 2", function(tp2)
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-834.650024, -39.8000107, 729.711487, 1, 5.03606801e-09, -4.89899632e-15, -5.03606801e-09, 1, -9.13254965e-08, 4.43907521e-15, 9.13254965e-08, 1)
+end)
+---
+MainBottomRight:AddButton("Area 3", function(tp3)
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(1242.04211, -42.195137, 849.139771, 1, 0, 0, 0, 1, 0, 0, 0, 1)
+end)
+---
+MainBottomRight:AddButton("Area 4", function(tp4)
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(101.389404, 9.91628075, 2134.89282, 1, 0, 0, 0, 1, 0, 0, 0, 1)
+end)
+---
+MainBottomRight:AddButton("Area 5", function(tp5)
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-1195.8833, -27.0000057, 2249.5813, 0.145752475, -2.14109246e-08, 0.989321113, 9.40005365e-11, 1, 2.16281908e-08, -0.989321113, -3.05936543e-09, 0.145752475)
+end)
+---
+MainBottomRight:AddButton("Area 6", function(tp6)
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(1648.03381, -24.7460938, 2193.33105, 1, 0, 0, 0, 1, 0, 0, 0, 1)
+end)
+---
+MainBottomRight:AddButton("Area 7", function(tp7)
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(1302.04053, -110.459435, -852.051575, 1, 0, 0, 0, 1, 0, 0, 0, 1)
+end)
+---
+MainBottomRight:AddButton("Area 8", function(tp8)
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(797.040283, 16.33321, 3693.44849, -0.999932826, -8.98546091e-08, 0.0115898494, -8.95734047e-08, 1, 2.47823468e-08, -0.0115898494, 2.37425404e-08, -0.999932826)
+end)
+---
+MainBottomRight:AddButton("Area 9", function(tp9)
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-473.959442, 8.99999714, 3623.44849, -0.999794543, -2.14428439e-08, 0.0202686451, -1.95015755e-08, 1, 9.59745634e-08, -0.0202686451, 9.5559578e-08, -0.999794543)
+end)
+---
+
+-----Settings----------Settings----------Settings----------Settings----------Settings-----
+local SetTopLeft = Settings:CreateSector("Settings", "left")
+local SetTopRight = Settings:CreateSector("Misc", "right")
+local SetMidRight = Settings:CreateSector("Safety", "right")
+local SetBottomRight = Settings:CreateSector("Credits", "right")
+
+---
+SetTopRight:AddButton("Antiafk", function(antiafk)
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/26eldrpau/Balloon-Hub/main/Anime%20Adventures/anti-afk"))()
+end)
+---
+SetTopRight:AddButton("Rejoin", function(rejoin)
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/26eldrpau/Balloon-Hub/main/Anime%20Adventures/Rejoin"))()
+end)
+---
+SetTopRight:AddButton("Serverhop", function(serverhop)
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/26eldrpau/Balloon-Hub/main/Anime%20Adventures/Serverhop"))()
+end)
+---
+SetMidRight:AddButton("Hidename", function(hidename)
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/26eldrpau/Balloon-Hub/main/Anime%20Champions/Hide%20Name"))()
+end)
+---
+SetMidRight:AddButton("Removeface", function(removeface)
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/26eldrpau/Balloon-Hub/main/Anime%20Adventures/Remove%20Face"))()
+end)
+---
+SetMidRight:AddButton("Removemesh", function(removemesh)
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/26eldrpau/Balloon-Hub/main/Anime%20Adventures/Remove%20Mesh"))()
+end)
+---
+SetMidRight:AddLabel("⬇️Press 5 times⬇️")
+SetMidRight:AddButton("Remove Body", function(removebody)
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/26eldrpau/Balloon-Hub/main/Anime%20Adventures/Remove%20Body"))()
+end)
+---
+SetMidRight:AddButton("Reset", function(reset)
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/26eldrpau/Balloon-Hub/main/Anime%20Adventures/Reset"))()
+end)
+-----
+SetBottomRight:AddLabel("Redninjaawesome#9097")
+SetBottomRight:AddButton("Discord", function(discordlink)
+    setclipboard("https://discord.gg/3xHHGB3pRG")
+end)
+-----
+SetTopLeft:AddLabel("Work in progress")
+SetTopLeft:AddSlider("Walkspeed", 0, 16, 500, 1, function(walk)
+    game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = walk
+end)
