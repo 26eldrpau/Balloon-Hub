@@ -28,6 +28,8 @@ game:GetService("ReplicatedStorage").___Assets.___Events.__Fires:FireServer(ohSt
 wait(1.75)
 game:GetService("ReplicatedStorage").___Assets.___Events.__Fires:FireServer(ohString1, ohString2, ohString3, ohVector34)
 wait(1.75)
+game:GetService("ReplicatedStorage").___Assets.___Events.__Fires:FireServer(ohString1, ohString2, ohString3, ohVector34)
+wait(1.75)
 
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(428.958954, 10.7596073, -826.564758, 0.0617794916, -1.03523639e-07, 0.99808985, 1.01215836e-09, 1, 1.03659112e-07, -0.99808985, -5.39378231e-09, 0.0617794916)
 wait()
@@ -37,6 +39,8 @@ local ohString3 = "Activate"
 local ohVector35 = Vector3.new(423.9539489746094, 8.341035842895508, -823.3053588867188)
 
 wait(.5) do
+game:GetService("ReplicatedStorage").___Assets.___Events.__Fires:FireServer(ohString1, ohString2, ohString3, ohVector35)
+wait(1.75)
 game:GetService("ReplicatedStorage").___Assets.___Events.__Fires:FireServer(ohString1, ohString2, ohString3, ohVector35)
 wait(1.75)
 game:GetService("ReplicatedStorage").___Assets.___Events.__Fires:FireServer(ohString1, ohString2, ohString3, ohVector35)
@@ -70,6 +74,8 @@ game:GetService("ReplicatedStorage").___Assets.___Events.__Fires:FireServer(ohSt
 wait(1.75)
 game:GetService("ReplicatedStorage").___Assets.___Events.__Fires:FireServer(ohString1, ohString2, ohString3, ohVector36)
 wait(1.75)
+game:GetService("ReplicatedStorage").___Assets.___Events.__Fires:FireServer(ohString1, ohString2, ohString3, ohVector36)
+wait(1.75)
 
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(399.943451, 10.7596092, -795.068359, -0.010789765, 9.23823791e-08, 0.999941766, 1.0735115e-09, 1, -9.2376176e-08, -0.999941766, 7.67317251e-11, -0.010789765)
 wait()
@@ -79,6 +85,8 @@ local ohString3 = "Activate"
 local ohVector37 = Vector3.new(391.2677307128906, 9.407958984375, -790.4297485351562)
 
 wait(.5) do
+game:GetService("ReplicatedStorage").___Assets.___Events.__Fires:FireServer(ohString1, ohString2, ohString3, ohVector37)
+wait(1.75)
 game:GetService("ReplicatedStorage").___Assets.___Events.__Fires:FireServer(ohString1, ohString2, ohString3, ohVector37)
 wait(1.75)
 game:GetService("ReplicatedStorage").___Assets.___Events.__Fires:FireServer(ohString1, ohString2, ohString3, ohVector37)
@@ -112,6 +120,8 @@ game:GetService("ReplicatedStorage").___Assets.___Events.__Fires:FireServer(ohSt
 wait(1.75)
 game:GetService("ReplicatedStorage").___Assets.___Events.__Fires:FireServer(ohString1, ohString2, ohString3, ohVector38)
 wait(1.75)
+game:GetService("ReplicatedStorage").___Assets.___Events.__Fires:FireServer(ohString1, ohString2, ohString3, ohVector38)
+wait(1.75)
 
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(397.642151, 10.7596073, -858.022217, 0.99824512, -1.05588143e-08, 0.0592173226, 1.21993837e-08, 1, -2.7342681e-08, -0.0592173226, 2.80171122e-08, 0.99824512)
 wait()
@@ -121,6 +131,8 @@ local ohString3 = "Activate"
 local ohVector39 = Vector3.new(406.9551086425781, 8.294477462768555, -862.632568359375)
 
 wait(.5) do
+game:GetService("ReplicatedStorage").___Assets.___Events.__Fires:FireServer(ohString1, ohString2, ohString3, ohVector39)
+wait(1.75)
 game:GetService("ReplicatedStorage").___Assets.___Events.__Fires:FireServer(ohString1, ohString2, ohString3, ohVector39)
 wait(1.75)
 game:GetService("ReplicatedStorage").___Assets.___Events.__Fires:FireServer(ohString1, ohString2, ohString3, ohVector39)
