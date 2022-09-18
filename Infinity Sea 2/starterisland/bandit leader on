@@ -1,3 +1,5 @@
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(804.635925, 47.9801636, -616.429504, -0.568619132, -7.51150964e-08, 0.822600901, -3.24146718e-08, 1, 6.89076458e-08, -0.822600901, 1.25178659e-08, -0.568619132)
+wait()
 _G.loop = true
 
 while _G.loop do
