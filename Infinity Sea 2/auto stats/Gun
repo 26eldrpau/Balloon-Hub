@@ -1,0 +1,6 @@
+while wait() do
+local ohString1 = "__AddedStats"
+local ohString2 = "Gun"
+
+game:GetService("ReplicatedStorage").___Assets.___Events.__Fires:FireServer(ohString1, ohString2)
+end
