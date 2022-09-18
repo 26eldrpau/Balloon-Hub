@@ -1,6 +1,0 @@
-local ohString1 = "__Interaction"
-local ohString2 = "__Quest"
-local ohString3 = "Bandit"
-local ohInstance4 = workspace.___Game.__Render.Island_Starter.__Npcs.___Quests.Bandit
-
-game:GetService("ReplicatedStorage").___Assets.___Events.__Fires:FireServer(ohString1, ohString2, ohString3, ohInstance4)
