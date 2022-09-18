@@ -1,0 +1,11 @@
+local ohString1 = "Code"
+local ohString2 = "!Code_10K VISITS"
+local ohString3 = "!Code_100 LIKES"
+local ohString4 = "!Code_sky best animator"
+
+game:GetService("ReplicatedStorage").___Assets.___Events.__Fires:FireServer(ohString1, ohString2)
+wait(.1)
+game:GetService("ReplicatedStorage").___Assets.___Events.__Fires:FireServer(ohString1, ohString3)
+wait(.1)
+game:GetService("ReplicatedStorage").___Assets.___Events.__Fires:FireServer(ohString1, ohString4)
+wait(.1)
