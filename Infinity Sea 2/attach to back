@@ -11,7 +11,7 @@ pcall(function()
                 t2 = true
                 if (Player.Character.Head.Position - target.Parent.Head.Position).Magnitude < 150  and t2 then
                     while wait() do
-                        Player.Character.HumanoidRootPart.CFrame = target.Parent.HumanoidRootPart.CFrame * CFrame.new(0,0,4)
+                        Player.Character.HumanoidRootPart.CFrame = target.Parent.HumanoidRootPart.CFrame * CFrame.new(0,0,3.5)
                         if t2 == false then
                             break
                         end
