@@ -1,0 +1,13 @@
+          originallocation = game:GetService("Players").LocalPlayer.Character:GetPrimaryPartCFrame()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(2300.58179, 77.0518188, 913.920227, 0.469779164, -5.02741777e-08, -0.882783949, 4.64984602e-08, 1, -3.22051257e-08, 0.882783949, -2.59187978e-08, 0.469779164)
+wait(.25)
+local ohString1 = "__Interaction"
+local ohString2 = "__Quest"
+local ohString3 = "MarineHaki"
+local ohInstance4 = workspace.___Game.__Render.Shells_Town_Island.__Npcs.___Quests.MarineHaki
+
+game:GetService("ReplicatedStorage").___Assets.___Events.__Fires:FireServer(ohString1, ohString2, ohString3, ohInstance4)
+wait(.25)
+          game:GetService("Players").LocalPlayer.Character:SetPrimaryPartCFrame(originallocation)
+
+teleport()
