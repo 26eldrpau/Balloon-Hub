@@ -1,0 +1,19 @@
+wait(.25)
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(558.370056, 10.2220497, -1430.32825, 0.999992788, -4.2309793e-08, -0.00379805523, 4.24549462e-08, 1, 3.81378413e-08, 0.00379805523, -3.82988148e-08, 0.999992788)
+wait(.75)
+local ohString1 = "__Interaction"
+local ohString2 = "__Quest"
+local ohString3 = "ChestFind"
+local ohInstance4 = workspace.___Game.__Render.Island_Starter.__Npcs.___Quests.ChestFind
+
+game:GetService("ReplicatedStorage").___Assets.___Events.__Fires:FireServer(ohString1, ohString2, ohString3, ohInstance4)
+wait(.5)
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(399.66629, 10.7596073, -1104.48828, -0.999281704, -9.20000431e-08, -0.0378951654, -9.33129058e-08, 1, 3.28759846e-08, 0.0378951654, 3.6388478e-08, -0.999281704)
+wait(.5)
+local vim = game:service'VirtualInputManager'
+       vim:SendKeyEvent(true, "E", false, game)
+      wait()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(618.56897, 10.7596073, -510.260254, 0.933708072, -3.83111143e-08, 0.358035207, 4.20542534e-08, 1, -2.66812283e-09, -0.358035207, 1.75481514e-08, 0.933708072)
+wait(.5)
+       vim:SendKeyEvent(true, "E", false, game)
+      wait()
