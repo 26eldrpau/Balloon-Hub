@@ -1,0 +1,8 @@
+_G.loop = false
+
+while _G.loop do
+   local behindamount = -3.5 --change, if you want it more back or less
+    
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game.workspace.___Game.__Render.Jungle_Island.__Npcs.___Mobs.GiantMonkey.HumanoidRootPart.CFrame + game.workspace.___Game.__Render.Jungle_Island.__Npcs.___Mobs.GiantMonkey.HumanoidRootPart.CFrame.lookVector * behindamount
+   wait() -- delay to prevent crashing
+end
