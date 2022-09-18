@@ -1,0 +1,13 @@
+          originallocation = game:GetService("Players").LocalPlayer.Character:GetPrimaryPartCFrame()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-677.848755, 12.3878517, -3049.00928, 0.960749686, 1.88722247e-08, 0.277416646, -1.37730884e-08, 1, -2.03294732e-08, -0.277416646, 1.57106523e-08, 0.960749686)
+wait(.25)
+local ohString1 = "__Interaction"
+local ohString2 = "__Quest"
+local ohString3 = "KingMonkey"
+local ohInstance4 = workspace.___Game.__Render.Jungle_Island.__Npcs.___Quests.KingMonkey
+
+game:GetService("ReplicatedStorage").___Assets.___Events.__Fires:FireServer(ohString1, ohString2, ohString3, ohInstance4)
+wait(.25)
+          game:GetService("Players").LocalPlayer.Character:SetPrimaryPartCFrame(originallocation)
+
+teleport()
