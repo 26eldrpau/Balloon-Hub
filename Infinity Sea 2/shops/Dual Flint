@@ -1,0 +1,6 @@
+local ohString1 = "__Interaction"
+local ohString2 = "_Seller"
+local ohString3 = "DualFlint"
+local ohInstance4 = workspace.___Game.__Render.Syrup_Island.__Npcs.__Sellers.DualFlint
+
+game:GetService("ReplicatedStorage").___Assets.___Events.__Fires:FireServer(ohString1, ohString2, ohString3, ohInstance4)
