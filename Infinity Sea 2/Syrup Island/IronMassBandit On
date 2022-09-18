@@ -1,0 +1,8 @@
+_G.loop = true
+
+while _G.loop do
+   local behindamount = -3.5 --change, if you want it more back or less
+    
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace")["___Game"]["__Render"]["Syrup_Island"]["__Npcs"]["___Mobs"].IronMassBandit.HumanoidRootPart.CFrame + game:GetService("Workspace")["___Game"]["__Render"]["Syrup_Island"]["__Npcs"]["___Mobs"].IronMassBandit.HumanoidRootPart.CFrame.lookVector * behindamount
+   wait() -- delay to prevent crashing
+end
