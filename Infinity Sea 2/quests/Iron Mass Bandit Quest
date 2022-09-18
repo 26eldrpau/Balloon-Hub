@@ -1,0 +1,13 @@
+          originallocation = game:GetService("Players").LocalPlayer.Character:GetPrimaryPartCFrame()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(2432.32397, 49.0752182, -2570.16675, 0.963639498, -1.06659968e-07, 0.267205685, 9.83782726e-08, 1, 4.43806805e-08, -0.267205685, -1.64797438e-08, 0.963639498)
+wait(.25)
+local ohString1 = "__Interaction"
+local ohString2 = "__Quest"
+local ohString3 = "IronMassBandits"
+local ohInstance4 = workspace.___Game.__Render.Syrup_Island.__Npcs.___Quests.IronMassBandits
+
+game:GetService("ReplicatedStorage").___Assets.___Events.__Fires:FireServer(ohString1, ohString2, ohString3, ohInstance4)
+wait(.25)
+          game:GetService("Players").LocalPlayer.Character:SetPrimaryPartCFrame(originallocation)
+
+teleport()
