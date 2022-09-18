@@ -1,0 +1,4 @@
+if not game:IsLoaded() then game.Loaded:Wait() end
+    for i, v in next, game.Players:GetPlayers() do
+game:GetService("Workspace")["___Game"]["___Characters"]:WaitForChild(v.Name):FindFirstChild'BillboardGui':Destroy()
+end
