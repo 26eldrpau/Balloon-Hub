@@ -1,0 +1,13 @@
+          originallocation = game:GetService("Players").LocalPlayer.Character:GetPrimaryPartCFrame()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(2282.10132, 49.2300186, -2492.12256, -0.843466282, -6.33290256e-08, -0.537182152, -8.67811849e-08, 1, 1.83698905e-08, 0.537182152, 6.21116882e-08, -0.843466282)
+wait(.25)
+local ohString1 = "__Interaction"
+local ohString2 = "__Quest"
+local ohString3 = "GunnersBandits"
+local ohInstance4 = workspace.___Game.__Render.Syrup_Island.__Npcs.___Quests.GunnersBandits
+
+game:GetService("ReplicatedStorage").___Assets.___Events.__Fires:FireServer(ohString1, ohString2, ohString3, ohInstance4)
+wait(.25)
+          game:GetService("Players").LocalPlayer.Character:SetPrimaryPartCFrame(originallocation)
+
+teleport()
