@@ -1,6 +1,7 @@
 _G.loop = true
 
 while _G.loop do
+    wait(.1)
 for _, instance in next, game:GetService("Workspace")["___Game"]["__Render"]["Jungle_Island"]["__Npcs"]["___Mobs"]:GetChildren() do
     if instance.Name == "GiantMonkey" and instance:WaitForChild("Humanoid").Health >0 then
        local behindamount = -3.5
