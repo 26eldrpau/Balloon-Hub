@@ -1,9 +1,10 @@
 _G.loop = true
 
 while _G.loop do
-   local behindamount = -3.5 --change, if you want it more back or less
-        if instance.Name == "Monkey" and instance:WaitForChild("Humanoid").Health >0 then
+for _, instance in next, game:GetService("Workspace")["___Game"]["__Render"]["Jungle_Island"]["__Npcs"]["___Mobs"]:GetChildren() do
+    if instance.Name == "Monkey" and instance:WaitForChild("Humanoid").Health >0 then
        local behindamount = -3.5
     game.Players.LocalPlayer.Character:WaitForChild("HumanoidRootPart").CFrame = instance:WaitForChild("HumanoidRootPart").CFrame + instance:WaitForChild("HumanoidRootPart").CFrame.lookVector * behindamount
-   wait() -- delay to prevent crashing
+end
+end
 end
