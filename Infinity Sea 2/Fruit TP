@@ -1,5 +1,5 @@
         for i,v in pairs(game.workspace.___Game.___IgnoreMouse:GetChildren()) do
             if v:FindFirstChild("Handle") then
-                game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(v)
+                game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(v.CFrame)
             end
 end
