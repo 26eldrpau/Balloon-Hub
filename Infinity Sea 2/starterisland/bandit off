@@ -2,7 +2,9 @@ _G.loop = false
 
 while _G.loop do
    local behindamount = -3.5 --change, if you want it more back or less
-    
+    for _, instance in next, game:GetService("Workspace")["___Game"]["__Render"]["Island_Starter"]["__Npcs"]["___Mobs"]:GetChildren() do
+    if instance.Name == "Bandit" and instance:WaitForChild("Humanoid").Health >0 then
     game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game.workspace.___Game.__Render.Island_Starter.__Npcs.___Mobs.Bandit.HumanoidRootPart.CFrame + game.workspace.___Game.__Render.Island_Starter.__Npcs.___Mobs.Bandit.HumanoidRootPart.CFrame.lookVector * behindamount
    wait() -- delay to prevent crashing
 end
+
