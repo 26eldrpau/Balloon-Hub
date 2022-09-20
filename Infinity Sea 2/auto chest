@@ -9,5 +9,4 @@ for _, island in ipairs(workspace.___Game.__Render:GetChildren()) do
         wait(.1)
         fireclickdetector(chest.ClickDetector)
     end
-end
-end
+end end
