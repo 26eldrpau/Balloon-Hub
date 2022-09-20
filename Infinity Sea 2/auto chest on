@@ -1,3 +1,6 @@
+_G.loop = true
+
+while _G.loop do
 while wait(10) do
 for _, island in ipairs(workspace.___Game.__Render:GetChildren()) do
     local chests = island:FindFirstChild('__Chests') or island.Chest
@@ -12,3 +15,6 @@ wait(.1)
         fireclickdetector(chest.ClickDetector)
     end
 end end
+   wait() -- delay to prevent crashing
+end
+
