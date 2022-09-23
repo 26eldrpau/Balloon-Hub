@@ -1,0 +1,10 @@
+while wait(.5) do
+if not game:IsLoaded() then game.Loaded:Wait() end
+    for i, v in next, game.Players:GetPlayers() do
+workspace.Live:WaitForChild(v.Name).Head:FindFirstChild'HealthBar':Destroy()
+wait()
+workspace.Live:WaitForChild(v.Name).Head:FindFirstChild'Title':Destroy()
+wait()
+workspace.Live:WaitForChild(v.Name).Head:FindFirstChild'CrewFlag':Destroy()
+end
+end
