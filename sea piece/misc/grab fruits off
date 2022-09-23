@@ -1,0 +1,19 @@
+_G.loop = false
+
+while _G.loop do
+
+originallocation = game:GetService("Players").LocalPlayer.Character:GetPrimaryPartCFrame()
+for i,v in pairs(workspace:GetChildren()) do
+    if v.Name == "Handle" then
+        if v.Parent:IsA("Tool") then
+            wait(.1)
+            game.Players.LocalPlayer.Character:MoveTo(Vector3.new(v.Position))
+            wait(.25)
+          game:GetService("Players").LocalPlayer.Character:SetPrimaryPartCFrame(originallocation)
+teleport()
+ end
+            end
+   wait()
+        end
+   wait()
+end
