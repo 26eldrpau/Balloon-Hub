@@ -1,7 +1,7 @@
 _G.loop = true
 
 while _G.loop do
-   wait(10)
+   wait(5)
 local ohString1 = "ChichaQuest"
 
 game:GetService("ReplicatedStorage").Remotes.GetQuest:FireServer(ohString1)
