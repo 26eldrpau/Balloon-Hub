@@ -1,7 +1,6 @@
     _G.loop = true
 
-while _G.loop do
-    local c = jump
-    game:GetService('Players').LocalPlayer.Character.Humanoid.JumpPower = c
-   wait() -- delay to prevent crashing
-end
+    while _G.loop do
+        game:GetService('Players').LocalPlayer.Character.Humanoid.WalkSpeed = jump
+       wait() -- delay to prevent crashing
+    end 
