@@ -1,4 +1,4 @@
-_G.loop = true
+_G.loop = false
 
 while _G.loop do
     wait(.1)
