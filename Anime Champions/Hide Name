@@ -1,4 +1,5 @@
 if not game:IsLoaded() then game.Loaded:Wait() end
+while wait(.5)
     for i, v in next, game.Players:GetPlayers() do
 workspace:WaitForChild(v.Name).Head:FindFirstChild'HealthBar':Destroy()
-end
+end end
