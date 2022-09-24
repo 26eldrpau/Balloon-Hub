@@ -1,7 +1,7 @@
+    local v = walk
     _G.loop = false
 
     while _G.loop do
-    local v = walk
         game:GetService('Players').LocalPlayer.Character.Humanoid.WalkSpeed = v
        wait() -- delay to prevent crashing
     end 
