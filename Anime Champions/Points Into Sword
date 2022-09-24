@@ -1,4 +1,4 @@
-        wait(.1)
+        wait(.01)
         local ohString2 = "BladeSkill"
 
         game:GetService("ReplicatedStorage").Data.IncreaseSkill:FireServer(ohString2)
