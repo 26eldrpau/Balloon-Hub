@@ -415,9 +415,9 @@ function Library:create(options)
 		Link = "https://discord.gg/3xHHGB3pRG"
 	}, options)
 
-	if getgenv and getgenv().MercuryUI then
-		getgenv():MercuryUI()
-		getgenv().MercuryUI = nil
+	if getgenv and getgenv().BalloonHubUI then
+		getgenv():BalloonHubUI()
+		getgenv().BalloonHubUI = nil
 	end
 
 
@@ -566,7 +566,7 @@ function Library:create(options)
 	end
 
 	if getgenv then
-		getgenv().MercuryUI = closeUI
+		getgenv().BalloonHubUI = closeUI
 	end
 
 	closeButton.MouseButton1Click:connect(function()
