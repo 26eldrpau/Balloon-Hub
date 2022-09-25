@@ -1,0 +1,27 @@
+if autoattack then
+            _G.loop = true
+
+            while _G.loop do
+    local ohString1 = "2008"
+    local ohNumber1 = 10000000
+    
+    
+    game:GetService("ReplicatedStorage").Events.Bindable.NormalAttack:Fire()
+    game:GetService("ReplicatedStorage").Events.Bindable.AttackCombo:Fire(ohNumber1)
+    game:GetService("ReplicatedStorage").Events.Remote.PlayerAttackAction:FireServer(ohString1)
+    wait()
+    end
+end
+            _G.loop = false
+
+            while _G.loop do
+                local ohString1 = "2008"
+                local ohNumber1 = 10000000
+                
+                
+                game:GetService("ReplicatedStorage").Events.Bindable.NormalAttack:Fire()
+                game:GetService("ReplicatedStorage").Events.Bindable.AttackCombo:Fire(ohNumber1)
+                game:GetService("ReplicatedStorage").Events.Remote.PlayerAttackAction:FireServer(ohString1)
+                wait()
+                end
+            
