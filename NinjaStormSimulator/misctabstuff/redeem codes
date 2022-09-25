@@ -1,0 +1,20 @@
+local ohTable1 = {
+	["Name"] = "RedeemCodeCommand",
+	["Code"] = "thank2k"
+}
+
+game:GetService("ReplicatedStorage").__network.Player.RF.ServerHandler_2673612301:InvokeServer(ohTable1)
+wait(.1)
+local ohTable2 = {
+	["Name"] = "RedeemCodeCommand",
+	["Code"] = "gift500"
+}
+
+game:GetService("ReplicatedStorage").__network.Player.RF.ServerHandler_2673612301:InvokeServer(ohTable2)
+wait(.1)
+local ohTable3 = {
+	["Name"] = "RedeemCodeCommand",
+	["Code"] = "happysunday"
+}
+
+game:GetService("ReplicatedStorage").__network.Player.RF.ServerHandler_2673612301:InvokeServer(ohTable3)
