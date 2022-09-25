@@ -1,3 +1,4 @@
+Callback(autoattack)
 if autoattack then
             _G.loop = true
 
