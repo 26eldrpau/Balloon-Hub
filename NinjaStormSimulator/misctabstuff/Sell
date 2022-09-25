@@ -1,0 +1,8 @@
+          originallocation = game.Players.LocalPlayer.Character:GetPrimaryPartCFrame()
+local ohTable1 = {
+	["eventType"] = "sellTeleport"
+}
+game:GetService("ReplicatedStorage").TeleportToTargetEvent:FireServer(ohTable1)
+wait(.5)
+          game:GetService("Players").LocalPlayer.Character:SetPrimaryPartCFrame(originallocation)
+teleport()
