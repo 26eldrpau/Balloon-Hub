@@ -1,2 +1,7 @@
-local A_1 = "2008"
-game:GetService("ReplicatedStorage").RemoteEvents.EnemyDamage:FireServer(A_1)
+local ohString1 = "2008"
+local ohNumber1 = 10000000
+
+
+game:GetService("ReplicatedStorage").Events.Bindable.NormalAttack:Fire()
+game:GetService("ReplicatedStorage").Events.Bindable.AttackCombo:Fire(ohNumber1)
+game:GetService("ReplicatedStorage").Events.Remote.PlayerAttackAction:FireServer(ohString1)
