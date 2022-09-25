@@ -1,0 +1,2 @@
+local A_1 = "2008"
+game:GetService("ReplicatedStorage").RemoteEvents.EnemyDamage:FireServer(A_1)
