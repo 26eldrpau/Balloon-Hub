@@ -1,0 +1,8 @@
+    _G.loop = true
+
+    while _G.loop do
+    game.Players.LocalPlayer.SkillCd1.Value = "0"
+    game.Players.LocalPlayer.SkillCd2.Value = "0"
+    game.Players.LocalPlayer.SkillCd3.Value = "0"
+       wait()
+    end
