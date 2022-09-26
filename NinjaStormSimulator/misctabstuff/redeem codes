@@ -1,31 +1,32 @@
+while wait(5) do
+local CodeTable1 = {["Name"] = "RedeemCodeCommand", ["Code"] = "thank1000"}
+local CodeTable2 = {["Name"] = "RedeemCodeCommand", ["Code"] = "Thankufor10k"}
+local CodeTable3 = {["Name"] = "RedeemCodeCommand", ["Code"] = "OMG7k"}
+local CodeTable4 = {["Name"] = "RedeemCodeCommand", ["Code"] = "thank2k"}
+local CodeTable5 = {["Name"] = "RedeemCodeCommand", ["Code"] = "gift500"}
+local CodeTable6 = {["Name"] = "RedeemCodeCommand", ["Code"] = "happysunday"}
+local CodeTable7 = {["Name"] = "RedeemCodeCommand", ["Code"] = "bigdogstudio"}
 
-local ohTable1 = {["Name"] = "RedeemCodeCommand", ["Code"] = "thank1000"}
-local ohTable2 = {["Name"] = "RedeemCodeCommand", ["Code"] = "Thankufor10k"}
-local ohTable3 = {["Name"] = "RedeemCodeCommand", ["Code"] = "OMG7k"}
-local ohTable4 = {["Name"] = "RedeemCodeCommand", ["Code"] = "thank2k"}
-local ohTable5 = {["Name"] = "RedeemCodeCommand", ["Code"] = "gift500"}
-local ohTable6 = {["Name"] = "RedeemCodeCommand", ["Code"] = "happysunday"}
-local ohTable7 = {["Name"] = "RedeemCodeCommand", ["Code"] = "bigdogstudio"}
 
 
 
-for i,v in pairs(game:GetService("ReplicatedStorage")["__network"].Player.RF:GetDescendants()) do
-if v:IsA("RemoteFunction") then
-v:InvokeServer(ohTable1)
+
+for _, v in pairs(game:GetService("ReplicatedStorage")["__network"].Player.RF:GetChildren()) do
+if v.ClassName == "RemoteFunction" then
+        v:InvokeServer(CodeTable1)
 wait(.1)
-v:InvokeServer(ohTable1)
+        v:InvokeServer(CodeTable2)
 wait(.1)
-v:InvokeServer(ohTable2)
+        v:InvokeServer(CodeTable3)
 wait(.1)
-v:InvokeServer(ohTable3)
+        v:InvokeServer(CodeTable4)
 wait(.1)
-v:InvokeServer(ohTable4)
+        v:InvokeServer(CodeTable5)
 wait(.1)
-v:InvokeServer(ohTable5)
+        v:InvokeServer(CodeTable6)
 wait(.1)
-v:InvokeServer(ohTable6)
+        v:InvokeServer(CodeTable7)
 wait(.1)
-v:InvokeServer(ohTable7)
-else
+    end
 end
 end
