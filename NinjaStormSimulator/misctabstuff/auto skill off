@@ -1,0 +1,17 @@
+_G.loop = false
+
+        while _G.loop do
+local ohNumber1 = 1
+local ohNumber2 = 2
+local ohNumber3 = 3
+
+
+game:GetService("ReplicatedStorage").Events.Bindable.SkillAttack:Fire(ohNumber1)
+game:GetService("ReplicatedStorage").RemoteEvents.SkillAttack:FireServer(ohNumber1)
+wait(.1)
+game:GetService("ReplicatedStorage").Events.Bindable.SkillAttack:Fire(ohNumber2)
+game:GetService("ReplicatedStorage").RemoteEvents.SkillAttack:FireServer(ohNumber2)
+wait(.1)
+game:GetService("ReplicatedStorage").Events.Bindable.SkillAttack:Fire(ohNumber3)
+game:GetService("ReplicatedStorage").RemoteEvents.SkillAttack:FireServer(ohNumber3)
+end
