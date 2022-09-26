@@ -1,0 +1,11 @@
+local ohTable1 = { ["Name"] = "ShopBuyItem", ["GoodId"] = 2005 }
+local ohTable2 = { ["Name"] = "BagLockCommand", ["BagId"] = 99105 }
+
+
+for _, v in pairs(game:GetService("ReplicatedStorage")["__network"].Player.RF:GetChildren()) do
+if v.ClassName == "RemoteFunction" then
+        v:InvokeServer(CodeTable1)
+wait(.1)
+        v:InvokeServer(CodeTable2)
+    end
+end
