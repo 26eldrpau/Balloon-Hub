@@ -1,0 +1,6 @@
+wait(.01)
+   for _, instance in next, game.workspace.GhostPos:GetDescendants() do
+    if instance.Name == "Deidara" and instance:WaitForChild("Humanoid").Health >0 then
+       local behindamount = -7.5
+    game.Players.LocalPlayer.Character:WaitForChild("HumanoidRootPart").CFrame = instance:WaitForChild("HumanoidRootPart").CFrame + instance:WaitForChild("HumanoidRootPart").CFrame.lookVector * behindamount
+    end end
