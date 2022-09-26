@@ -1,0 +1,7 @@
+_G.loop = true
+while _G.loop do
+        wait(5)
+        local ohTable1 = {["eventType"] = "sellTeleport"}
+        game:GetService("ReplicatedStorage").TeleportToTargetEvent:FireServer(ohTable1)
+   wait()
+end
