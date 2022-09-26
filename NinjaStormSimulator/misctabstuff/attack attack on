@@ -1,0 +1,10 @@
+        _G.loop = true
+
+        while _G.loop do
+local ohString1 = "2008"
+
+
+game:GetService("ReplicatedStorage").Events.Bindable.NormalAttack:Fire()
+game:GetService("ReplicatedStorage").Events.Remote.PlayerAttackAction:FireServer(ohString1)
+wait()
+end
