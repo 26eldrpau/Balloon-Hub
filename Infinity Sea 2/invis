@@ -1,0 +1,19 @@
+local Character = game:GetService("Players").LocalPlayer.Character
+local Part = Instance.new("Part")
+local NewPos = Vector3.new(Character.PrimaryPart.Position.X, Character.PrimaryPart.Position.Y - 150, Character.PrimaryPart.Position.Z)
+
+game.Players.LocalPlayer.Character.Humanoid:Destroy()
+wait(6)
+Part.Anchored = true
+Part.Position = Vector3.new(NewPos.X, NewPos.Y - 1, NewPos.Z)
+Part.Size = Vector3.new(5, 1, 5)
+Character:MoveTo(NewPos)
+Part.Parent = game:GetService("Workspace")
+wait(1)
+for i, v in next, game.Players:GetPlayers() do
+    game.workspace.___Game.___Characters:WaitForChild(v.Name):FindFirstChild"LowerTorso":Destroy()
+end
+wait(1)
+local Character = game:GetService("Players").LocalPlayer.Character
+local Part = Instance.new("Part")
+local NewPos = Vector3.new(Character.PrimaryPart.Position.X, Character.PrimaryPart.Position.Y + 150, Character.PrimaryPart.Position.Z)
