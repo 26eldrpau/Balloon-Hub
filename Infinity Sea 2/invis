@@ -1,19 +1,23 @@
 local Character = game:GetService("Players").LocalPlayer.Character
 local Part = Instance.new("Part")
-local NewPos = Vector3.new(Character.PrimaryPart.Position.X, Character.PrimaryPart.Position.Y - 150, Character.PrimaryPart.Position.Z)
+local NewPos = Vector3.new(Character.PrimaryPart.Position.X, Character.PrimaryPart.Position.Y - 50, Character.PrimaryPart.Position.Z)
+originallocation = game:GetService("Players").LocalPlayer.Character:GetPrimaryPartCFrame()
 
 game.Players.LocalPlayer.Character.Humanoid:Destroy()
-wait(6)
+wait(7)
+
 Part.Anchored = true
-Part.Position = Vector3.new(NewPos.X, NewPos.Y - 1, NewPos.Z)
-Part.Size = Vector3.new(5, 1, 5)
-Character:MoveTo(NewPos)
+Part.Position = Vector3.new(NewPos.X, NewPos.Y - 5, NewPos.Z)
+Part.Size = Vector3.new(50, 1, 50)
 Part.Parent = game:GetService("Workspace")
 wait(1)
+
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(755.899902, -35.1915195078, -1240.28601, 0.950572908, 3.43404132e-08, 0.310501367, -5.78231578e-08, 1, 6.64239153e-08, -0.310501367, -8.10949459e-08, 0.950572908)
+wait(.1)
 for i, v in next, game.Players:GetPlayers() do
     game.workspace.___Game.___Characters:WaitForChild(v.Name):FindFirstChild"LowerTorso":Destroy()
 end
 wait(1)
-local Character = game:GetService("Players").LocalPlayer.Character
-local Part = Instance.new("Part")
-local NewPos = Vector3.new(Character.PrimaryPart.Position.X, Character.PrimaryPart.Position.Y + 150, Character.PrimaryPart.Position.Z)
+          game:GetService("Players").LocalPlayer.Character:SetPrimaryPartCFrame(originallocation)
+
+teleport()
