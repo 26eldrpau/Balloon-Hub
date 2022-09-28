@@ -1,0 +1,4 @@
+local ohString1 = "__BuyBoat"
+local ohString2 = "WarBoat"
+
+game:GetService("ReplicatedStorage").___Assets.___Events.__Fires:FireServer(ohString1, ohString2)
