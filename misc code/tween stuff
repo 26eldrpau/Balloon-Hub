@@ -1,0 +1,15 @@
+
+
+local g_TweenService = game:GetService("TweenService") -- Find the service and place in the variable
+local TweenPartTarget = game:GetService("Players").LocalPlayer.Character:FindFirstChild("HumanoidRootPart")
+local TargetPosition = Vector3.new(posyes)
+local Time = (TweenPartTarget.Position - TargetPosition).Magnitude / timeyes
+local TInfo = TweenInfo.new(
+15,
+Enum.EasingStyle.Linear,
+Enum.EasingDirection.InOut)
+local TBase = g_TweenService:Create(
+TweenPartTarget,
+TInfo,
+{Position = TargetPosition})
+TBase:Play()
