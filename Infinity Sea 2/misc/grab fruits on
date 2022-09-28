@@ -1,0 +1,9 @@
+_G.loop = true
+
+while _G.loop do
+for i, v in next, game.workspace.___Game.___IgnoreMouse.___Fruits:GetDescendants() do
+if v.Name == "___Click" then
+fireclickdetector(v)
+end end
+   wait()
+end
