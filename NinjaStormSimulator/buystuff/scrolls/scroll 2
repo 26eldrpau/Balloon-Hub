@@ -1,0 +1,7 @@
+local CodeTable1 = { ["RegionId"] = 3002, ["Name"] = "PetDrawCommand", ["MultiDraw"] = false }
+
+for _, v in pairs(game:GetService("ReplicatedStorage")["__network"].Player.RF:GetChildren()) do
+if v.ClassName == "RemoteFunction" then
+        v:InvokeServer(CodeTable1)
+    end
+end
