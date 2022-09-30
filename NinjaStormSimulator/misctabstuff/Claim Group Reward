@@ -1,0 +1,10 @@
+game.Players.LocalPlayer.InGroup.Value = true
+wait(.5)
+local CodeTable1 = { ["Name"] = "GroupAwardCommand" }
+
+for _, v in pairs(game:GetService("ReplicatedStorage")["__network"].Player.RF:GetChildren()) do
+if v.ClassName == "RemoteFunction" then
+        v:InvokeServer(CodeTable1)
+    end
+end
+end
