@@ -1,0 +1,6 @@
+while true do
+local args = {}
+game:GetService("ReplicatedStorage").___Assets.___Events.__Fires:FireServer(unpack(args))
+game:GetService("ReplicatedStorage").___Assets.___Events.__Function:InvokeServer(unpack(args))
+wait()
+end
