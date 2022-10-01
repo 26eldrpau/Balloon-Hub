@@ -1,0 +1,19 @@
+local pos = {
+    pos1 = positionstuff,
+   }
+
+  local Plr = game.Players.LocalPlayer.Character.HumanoidRootPart
+  local Distance = (Plr.Position - Vector3.new(pos.pos1)).Magnitude
+  local Time = Distance / speedstuff 
+  local tweenService, tweenInfo = game:GetService("TweenService"), TweenInfo.new(Time)
+
+  tween = tweenService:Create(Plr, tweenInfo, {Position = Vector3.new(pos.pos1)})
+
+  local plr = game.Players.LocalPlayer
+  tween.Completed:Connect(function(playbackState)
+    if playbackState == Enum.PlaybackState.Completed then
+      print("tween starter")
+    end
+  end)
+
+  tween:Play()
