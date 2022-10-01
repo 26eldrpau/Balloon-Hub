@@ -1,5 +1,3 @@
-game.Players.LocalPlayer.Character.Humanoid:Destroy()
-wait(8)
 local pos = {
     pos1 = positionstuff,
    }
