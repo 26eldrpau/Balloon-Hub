@@ -1,0 +1,14 @@
+local executorcheck =
+   is_sirhurt_closure and "Sirhurt User" or pebc_execute and "ProtoSmasher User" or syn and "Synapse X User" or
+   secure_load and "Sentinel User" or
+   KRNL_LOADED and "Krnl User" or
+   SONA_LOADED and "Sona User" or
+   "Unknown Exploit User"
+
+
+   game.StarterGui:SetCore("SendNotification", {
+    Title = "Notification!"; -- the title (ofc)
+    Text = executorcheck;
+    Icon = ""; -- the image if u want. 
+    Duration = 5; -- how long the notification should in secounds
+    })
