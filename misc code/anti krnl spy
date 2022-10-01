@@ -1,0 +1,8 @@
+while true do
+for i,v in pairs(game:GetService("CoreGui"):GetDescendants()) do
+if v.Name == "RemoteSpy" then
+v:Destroy()
+end
+end
+wait()
+end
