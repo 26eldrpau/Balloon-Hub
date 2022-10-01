@@ -1,5 +1,5 @@
 game.Players.LocalPlayer.Character.Humanoid:Destroy()
-wait(6)
+wait(8)
 local pos = {
     pos1 = positionstuff,
    }
