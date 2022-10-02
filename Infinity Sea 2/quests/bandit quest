@@ -1,3 +1,4 @@
+game.Players.LocalPlayer.Character.HumanoidRootPart.Anchored = true
           originallocation = game:GetService("Players").LocalPlayer.Character:GetPrimaryPartCFrame()
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(737.327698, 10.1964874, -1010.02289, 0.0223192051, -3.9720927e-08, -0.999750912, -1.49877106e-08, 1, -4.00654194e-08, 0.999750912, 1.58782054e-08, 0.0223192051)
 wait(.25)
@@ -10,4 +11,5 @@ game:GetService("ReplicatedStorage").___Assets.___Events.__Fires:FireServer(ohSt
 wait(.25)
           game:GetService("Players").LocalPlayer.Character:SetPrimaryPartCFrame(originallocation)
 
-teleport()
+wait(.1)
+game.Players.LocalPlayer.Character.HumanoidRootPart.Anchored = false
