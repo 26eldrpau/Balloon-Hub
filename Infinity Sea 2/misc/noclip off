@@ -1,0 +1,5 @@
+        game:GetService('RunService').Stepped:connect(function()
+            for i, v in pairs(game.Players.LocalPlayer.Character:GetChildren()) do
+                if v:IsA("MeshPart") then
+                v.CanCollide = true 
+        end end end)
