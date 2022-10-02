@@ -14,7 +14,7 @@ Part.Size = Vector3.new(50, 1, 50)
 Part.Parent = game:GetService("Workspace")
 wait(1)
 
-game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(755.899902, -35.1915195078, -1240.28601, 0.950572908, 3.43404132e-08, 0.310501367, -5.78231578e-08, 1, 6.64239153e-08, -0.310501367, -8.10949459e-08, 0.950572908)
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(2183.38306, 14.8406105, 973.462646, 0.359045267, -0.10494227, -0.927401543, -2.12751328e-08, 0.993658543, -0.112439744, 0.933320165, 0.0403709784, 0.356768399)
 wait(.1)
 for i, v in next, game.Players:GetPlayers() do
     game.workspace.___Game.___Characters:WaitForChild(v.Name):FindFirstChild"LowerTorso":Destroy()
