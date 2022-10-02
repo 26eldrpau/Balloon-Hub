@@ -1,5 +1,12 @@
+_G.loop = false
+
+while _G.loop do
         game:GetService('RunService').Stepped:connect(function()
             for i, v in pairs(game.Players.LocalPlayer.Character:GetChildren()) do
                 if v:IsA("MeshPart") then
-                v.CanCollide = true 
+                v.CanCollide = false
         end end end)
+   wait()
+end
+wait()
+v.CanCollide = true
