@@ -21,7 +21,7 @@ wait(.1) do
     local Character = game:GetService("Players").LocalPlayer.Character
     game.Players.LocalPlayer.Character.Humanoid:Destroy()
 
-wait(3)
+wait(4.5)
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(2027.19849, 76.7024384, 999.858521, 0.861220539, -0.040396601, 0.506623447, -7.84991627e-09, 0.996836066, 0.0794846714, -0.508231461, -0.0684538335, 0.858495712)
 wait(.75)
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(2061.40723, 45.2998009, 978.473328, -0.487699449, 0.305759072, -0.817716718, -4.16034901e-10, 0.936661899, 0.350234836, 0.873011589, 0.170809343, -0.456809491)
