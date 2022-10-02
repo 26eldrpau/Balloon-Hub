@@ -1,0 +1,42 @@
+    local blackgui = Instance.new('ScreenGui', game.Players.LocalPlayer.PlayerGui.InfinityGUIMain["__Main"].Shop.Box.Infos.Desc.Text)
+    blackgui.Name = "blackguis"
+    blackgui.ResetOnSpawn = false
+wait(.5)
+local black = Instance.new('Frame', game.Players.LocalPlayer.PlayerGui.InfinityGUIMain["__Main"].Shop.Box.Infos.Desc.Text.blackguis)
+    black.Name = "black"
+    black.Size = UDim2.new(250, 250, 250, 250)
+    black.BackgroundColor3 = Color3.new(0, 0, 0)
+wait()
+local blacktext = Instance.new('TextLabel', game.Players.LocalPlayer.PlayerGui.InfinityGUIMain["__Main"].Shop.Box.Infos.Desc.Text.blackguis)
+blacktext.Name = "wait"
+blacktext.Text = "Please Wait"
+blacktext.BackgroundTransparency = 0.89999997615814
+blacktext.BackgroundColor3 = Color3.new(0, 0, 0)
+blacktext.Size = UDim2.new(1, 0, 0, 30)
+blacktext.TextSize = 50
+blacktext.TextColor3 = Color3.new(255, 255, 255)
+blacktext.Position = UDim2.new(0, 0, 0, 500)
+blacktext.BorderSizePixel = 0
+wait(.1) do
+    local Character = game:GetService("Players").LocalPlayer.Character
+    game.Players.LocalPlayer.Character.Humanoid:Destroy()
+
+wait(3)
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(2027.19849, 76.7024384, 999.858521, 0.861220539, -0.040396601, 0.506623447, -7.84991627e-09, 0.996836066, 0.0794846714, -0.508231461, -0.0684538335, 0.858495712)
+wait(.75)
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(2061.40723, 45.2998009, 978.473328, -0.487699449, 0.305759072, -0.817716718, -4.16034901e-10, 0.936661899, 0.350234836, 0.873011589, 0.170809343, -0.456809491)
+wait(.75)
+for i, v in next, game.Players:GetPlayers() do
+    game.workspace.___Game.___Characters:WaitForChild(v.Name):FindFirstChild"LowerTorso":Destroy()
+end
+wait(2)
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(2139.66504, 14.8406105, 975.427246, 0.98178488, 0.0334374309, -0.187030539, -1.59928497e-08, 0.984391928, 0.175990105, 0.189996004, -0.172784418, 0.966461122)
+wait(.25)
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(2183.38306, 14.8406105, 973.462646, 0.359045267, -0.10494227, -0.927401543, -2.12751328e-08, 0.993658543, -0.112439744, 0.933320165, 0.0403709784, 0.356768399)
+wait(.25)
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(2190.85107, 72.2496643, 968.059753, 0.958811402, 0.118305407, 0.258233458, 1.32513076e-08, 0.909133554, -0.416504651, -0.284043461, 0.399349421, 0.871687651)
+wait(.25)
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(2202.13525, 86.1049728, 948.497192, 0.975591719, 0.0355796888, -0.216690764, -8.05046518e-09, 0.986786485, 0.162026048, 0.219592348, -0.158071265, 0.962700725)
+wait(1)
+game.Players.LocalPlayer.PlayerGui.InfinityGUIMain["__Main"].Shop.Box.Infos.Desc.Text.blackguis:Destroy()
+end
