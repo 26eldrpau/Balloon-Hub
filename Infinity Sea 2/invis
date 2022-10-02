@@ -1,3 +1,5 @@
+    game.Players.LocalPlayer.Data.Spawn.Value = "Starter_Island"
+wait()
 local Character = game:GetService("Players").LocalPlayer.Character
 local Part = Instance.new("Part")
 local NewPos = Vector3.new(Character.PrimaryPart.Position.X, Character.PrimaryPart.Position.Y - 50, Character.PrimaryPart.Position.Z)
