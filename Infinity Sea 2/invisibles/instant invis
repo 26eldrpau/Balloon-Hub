@@ -1,0 +1,28 @@
+    local blackgui = Instance.new('ScreenGui', game.Players.LocalPlayer.PlayerGui.InfinityGUIMain["__Main"].Shop.Box.Infos.Desc.Text)
+    blackgui.Name = "blackguis"
+    blackgui.ResetOnSpawn = false
+wait(.5)
+local black = Instance.new('Frame', game.Players.LocalPlayer.PlayerGui.InfinityGUIMain["__Main"].Shop.Box.Infos.Desc.Text.blackguis)
+    black.Name = "black"
+    black.Size = UDim2.new(250, 250, 250, 250)
+    black.BackgroundColor3 = Color3.new(0, 0, 0)
+wait()
+local blacktext = Instance.new('TextLabel', game.Players.LocalPlayer.PlayerGui.InfinityGUIMain["__Main"].Shop.Box.Infos.Desc.Text.blackguis)
+blacktext.Name = "wait"
+blacktext.Text = "Please Wait"
+blacktext.BackgroundTransparency = 0.89999997615814
+blacktext.BackgroundColor3 = Color3.new(0, 0, 0)
+blacktext.Size = UDim2.new(1, 0, 0, 30)
+blacktext.TextSize = 50
+blacktext.TextColor3 = Color3.new(255, 255, 255)
+blacktext.Position = UDim2.new(0, 0, 0, 500)
+blacktext.BorderSizePixel = 0
+wait()
+
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame =  game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame + Vector3.new(0,-10)
+wait(.25)
+game.Players.LocalPlayer.Character:FindFirstChild("LowerTorso"):Destroy()
+wait(.1)
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame =  game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame + Vector3.new(0,10)
+wait(2.5)
+game.Players.LocalPlayer.PlayerGui.InfinityGUIMain["__Main"].Shop.Box.Infos.Desc.Text.blackguis:Destroy()
