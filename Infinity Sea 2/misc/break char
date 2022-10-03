@@ -1,0 +1,9 @@
+_G.Enable = true
+if game.Players.LocalPlayer.Character:FindFirstChild("HumanoidRootPart") then game.Players.LocalPlayer.Character:FindFirstChild("HumanoidRootPart"):Destroy() end
+
+while _G.Enable==true do
+wait()
+game.Players.LocalPlayer.Character:FindFirstChildOfClass("Humanoid"):ChangeState(11)
+end
+
+wait()
