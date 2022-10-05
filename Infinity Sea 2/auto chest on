@@ -1,3 +1,5 @@
+loadstring(game:HttpGet("https://raw.githubusercontent.com/26eldrpau/Balloon-Hub/main/Infinity%20Sea%202/misc/break%20char"))()
+wait()
 _G.loop = true
 
 while _G.loop do
@@ -8,9 +10,7 @@ for _, island in ipairs(workspace.___Game.__Render:GetChildren()) do
     for _, chest in ipairs(chests:GetChildren()) do
         task.wait(.5)
         fireclickdetector(chest.ClickDetector)
-wait(.1)
-        fireclickdetector(chest.ClickDetector)
-        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = chest.CFrame
+game.Players.LocalPlayer.Character:MoveTo(Vector3.new(chest.CFrame))
         wait(.1)
         fireclickdetector(chest.ClickDetector)
     end
