@@ -1,10 +1,1 @@
-_G.loop = true
-
-while _G.loop do
-        game:GetService('RunService').Stepped:connect(function()
-            for i, v in pairs(game.Players.LocalPlayer.Character:GetChildren()) do
-                if v:IsA("MeshPart") then
-                v.CanCollide = false
-        end end end)
-   wait()
-end
+game.Players.LocalPlayer.Character.HumanoidRootPart.CanCollide = false
