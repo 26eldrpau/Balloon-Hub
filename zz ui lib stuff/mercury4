@@ -1,44 +1,5 @@
------DONTTOUCH----------DONTTOUCH----------DONTTOUCH----------DONTTOUCH----------DONTTOUCH-----
+
 if not game:IsLoaded() then game.Loaded:Wait() end
-
-math.randomseed(os.time())
-local Characters = "abcdefgjklmnopqrstuvwxyz1234567890";
-
-local tChars = {  };
-for str in Characters:gmatch('[^.-*]') do
-table.insert(tChars, str);
-end;
-Characters = tChars;tChars = nil;
-
-local function GetRandomCharacter(IgnoreCharacter, UL)
-local Char = Characters[math.random(1, #Characters)];
-
-if IgnoreCharacter then
-while Char == IgnoreCharacter do
-Char = Characters[math.random(1, #Characters)];
-end
-end;
-
-if UL then
-Char = (math.random(0, 1) == 0) and Char:lower() or Char:upper();
-end;
-
-return Char;
-end;
-
-local function GenerateString(Length)
-local String = {}
-local Recent;
-for i = 1, Length do
-local char = GetRandomCharacter(Recent, true);
-table.insert(String, char);
-Recent = char;
-end;
-
-return table.concat(String, '');
-end;
-
------DONTTOUCH----------DONTTOUCH----------DONTTOUCH----------DONTTOUCH----------DONTTOUCH-----
 wait(1)
 
 local TweenService = game:GetService("TweenService")
@@ -475,7 +436,7 @@ function Library:create(options)
 
 	self.CurrentTheme = options.Theme
 
-	local gui = self:object(GenerateString(10), {
+	local gui = self:object("Balloon Hub", {
 		Parent = (RunService:IsStudio() and LocalPlayer.PlayerGui) or game:GetService("CoreGui"),
 		ZIndexBehavior = Enum.ZIndexBehavior.Global
 	})
