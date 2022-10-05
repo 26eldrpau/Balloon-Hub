@@ -1,4 +1,4 @@
-math.randomseed(os.time())
+getgenv()math.randomseed(os.time())
 local Characters = "abcdefgjkl!(mnopqr%&stuvwxy$#z123)4567_+8=90";
 
 local tChars = {  };
@@ -23,7 +23,7 @@ end;
 return Char;
 end;
 
-local function GenerateString(Length)
+local function getgenv().GenerateString(Length)
 local String = {}
 local Recent;
 for i = 1, Length do
