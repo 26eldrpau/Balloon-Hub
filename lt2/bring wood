@@ -1,0 +1,7 @@
+    for _, Log in pairs(game.Workspace.LogModels:GetChildren()) do
+    if Log.Name:sub(1,6) == "Loose_" and Log:findFirstChild("Owner") then
+    if Log.Owner.Value == game.Players.LocalPlayer then
+    Log:MoveTo(game.Players.LocalPlayer.Character.Torso.Position + Vector3.new(0,15,0))
+    end
+    end
+    end
