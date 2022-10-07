@@ -1,0 +1,58 @@
+SawmillC = false
+Mouse = game.Players.LocalPlayer:GetMouse()
+_G.MAIN=Instance.new("ScreenGui",game.Players.LocalPlayer.PlayerGui)
+Instruction = Instance.new("TextLabel",_G.MAIN)
+Instruction.Position = UDim2.new(0,200,0,400)
+Instruction.Size = UDim2.new(0,100,0,50)
+Instruction.TextWrapped = true
+Instruction.TextScaled = true
+Instruction.Text = "'Q' to select a tree, Press P to select a sawmill, press Z to activate!"
+Instruction.Active = true
+Instruction.Draggable = true
+Instruction.ZIndex = 2
+Exit = Instance.new("TextButton",Instruction)
+Exit.Position=UDim2.new(1,0,0,0)
+Exit.Size = UDim2.new(0,30,0,30)
+Exit.Text = "Exit"
+Exit.MouseButton1Click:connect(function()
+_G.MAIN:Destroy()
+end)
+
+Mouse.KeyDown:connect(function(key)
+if key:lower() == "q" then
+Treee = Mouse.Target
+elseif key:lower() == "p" then
+if Mouse.Target.Parent:FindFirstChild("BlockageAlert") then
+Sawmill = Mouse.Target.Parent
+else
+Sawmill=Mouse.Target.Parent.Parent
+end
+if Sawmill:FindFirstChild("BlockageAlert") and Sawmill:FindFirstChild("Owner") then
+SawmillC = true
+else
+SawmillC = false
+print"Something went wrong while setting the sawmill!"
+end
+elseif key:lower() == "z" then
+if Treee ~= nil then
+Mod(Treee)
+else
+print("Select tree with 'Q'!")
+end
+end
+end)
+
+function Mod(SelectedPart)
+if SawmillC ~= true then
+print'Set the sawmill with "P"!'
+return
+end
+if SelectedPart.Parent:FindFirstChild("TreeClass") and SelectedPart.Parent:FindFirstChild("Owner") then
+print("Tree: "..SelectedPart.Parent.TreeClass.Value)
+Tree = SelectedPart.Parent
+Tree.PrimaryPart = SelectedPart
+game.ReplicatedStorage.Interaction.Verify:FireServer('Item owned by player',Tree)
+Tree:SetPrimaryPartCFrame(Sawmill.Particles.CFrame)
+game.ReplicatedStorage.Interaction.ClientIsDragging:FireServer(Tree)
+end
+end
