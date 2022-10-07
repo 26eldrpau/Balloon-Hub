@@ -1,14 +1,16 @@
-local uis = game.CoreGui.XenonUI_LIB
-_G.toggle = false
+local toggle = false
+local gui = game.CoreGui.XenonUI_LIB
 
-uis.InputBegan:connect(function(inp)
-if inp.KeyCode == Enum.KeyCode.LeftAlt and _G.toggle == false then
-_G.toggle = true
-script.Parent.Visible = true
-blur.Size = 24
-elseif inp.KeyCode == Enum.KeyCode.LeftAlt and _G.toggle == true then
-blur.Size = 0
-_G.toggle = false
-script.Parent.Visible = false
+function onKeyPress(actionName, userInputState, inputObject)
+    if userInputState == Enum.UserInputState.Begin then
+        if toggle == false then
+             toggle = not toggle
+              gui.Visible = true
+        else
+            toggle = not toggle
+             gui.Visible = false
+        end
+    end
 end
-end)
+
+game.ContextActionService:BindAction("keyPress", onKeyPress, false, Enum.KeyCode.LeftAlt)
