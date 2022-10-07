@@ -1,0 +1,14 @@
+local uis = game.CoreGui.XenonUI_LIB
+_G.toggle = false
+
+uis.InputBegan:connect(function(inp)
+if inp.KeyCode == Enum.KeyCode.LeftAlt and _G.toggle == false then
+_G.toggle = true
+script.Parent.Visible = true
+blur.Size = 24
+elseif inp.KeyCode == Enum.KeyCode.LeftAlt and _G.toggle == true then
+blur.Size = 0
+_G.toggle = false
+script.Parent.Visible = false
+end
+end)
