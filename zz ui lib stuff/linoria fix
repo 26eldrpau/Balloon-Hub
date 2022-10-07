@@ -10,9 +10,9 @@ local Mouse = LocalPlayer:GetMouse();
 
 local ProtectGui = protectgui or (syn and syn.protect_gui) or (function() end);
 
-local ScreenGui = Instance.new('ScreenGui');
+local BalloonHub = Instance.new('ScreenGui');
 ScreenGui.Name = "BalloonHub"
-ProtectGui(ScreenGui);
+ProtectGui(BalloonHub);
 
 BalloonHub.ZIndexBehavior = Enum.ZIndexBehavior.Global;
 BalloonHub.Parent = CoreGui;
