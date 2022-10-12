@@ -6,7 +6,7 @@ local Messsage = Instance.new("TextLabel")
 
 
 AreYouSureFruit.Name = "AreYouSureFruit"
-AreYouSureFruit.Parent = game.Players.LocalPlayer:WaitForChild("CoreGui")
+AreYouSureFruit.Parent = game:WaitForChild("CoreGui")
 AreYouSureFruit.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 
 yesno.Name = "yesno"
