@@ -1,0 +1,59 @@
+local AreYouSureFruit = Instance.new("ScreenGui")
+local yesno = Instance.new("Frame")
+local Yes = Instance.new("TextButton")
+local No = Instance.new("TextButton")
+local Messsage = Instance.new("TextLabel")
+
+
+AreYouSureFruit.Name = "AreYouSureFruit"
+AreYouSureFruit.Parent = game.Players.LocalPlayer:WaitForChild("CoreGui")
+AreYouSureFruit.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+yesno.Name = "yesno"
+yesno.Parent = AreYouSureFruit
+yesno.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+yesno.BorderSizePixel = 0
+yesno.Position = UDim2.new(0.437961638, 0, 0.162971169, 0)
+yesno.Size = UDim2.new(0, 250, 0, 100)
+
+Yes.Name = "Yes"
+Yes.Parent = yesno
+Yes.BackgroundColor3 = Color3.fromRGB(14, 102, 22)
+Yes.Position = UDim2.new(0, 0, 0.5, 0)
+Yes.Size = UDim2.new(0, 125, 0, 50)
+Yes.Font = Enum.Font.SciFi
+Yes.Text = "Yes"
+Yes.TextColor3 = Color3.fromRGB(0, 0, 0)
+Yes.TextSize = 25.000
+Yes.MouseButton1Down:Connect(function()
+	local ohString1 = "__Interaction"
+	local ohString2 = "__Action"
+	local ohString3 = "Remove Fruit"
+	local ohInstance4 = workspace.___Game.__Render.Island_Starter.__Npcs.__Sellers["Remove Fruit"]
+
+	game:GetService("ReplicatedStorage").___Assets.___Events.__Fires:FireServer(ohString1, ohString2, ohString3, ohInstance4)
+	wait(.15)
+	game.CoreGui.AreYouSureFruit:Remove()
+end)
+
+No.Name = "No"
+No.Parent = yesno
+No.BackgroundColor3 = Color3.fromRGB(162, 40, 0)
+No.Position = UDim2.new(0.5, 0, 0.5, 0)
+No.Size = UDim2.new(0, 125, 0, 50)
+No.Font = Enum.Font.SciFi
+No.Text = "No"
+No.TextColor3 = Color3.fromRGB(0, 0, 0)
+No.TextSize = 25.000
+No.MouseButton1Down:Connect(function()
+	game.CoreGui.AreYouSureFruit:Remove()
+end)
+
+Messsage.Name = "Messsage"
+Messsage.Parent = yesno
+Messsage.BackgroundColor3 = Color3.fromRGB(165, 142, 255)
+Messsage.Size = UDim2.new(0, 250, 0, 50)
+Messsage.Font = Enum.Font.SciFi
+Messsage.Text = "Are you sure you want to reset your fruit"
+Messsage.TextColor3 = Color3.fromRGB(0, 0, 0)
+Messsage.TextSize = 13.000
