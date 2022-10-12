@@ -9,7 +9,7 @@ local black = Instance.new('Frame', game.Players.LocalPlayer.PlayerGui.InfinityG
 wait()
 local blacktext = Instance.new('TextLabel', game.Players.LocalPlayer.PlayerGui.InfinityGUIMain["__Main"].Shop.Box.Infos.Desc.Text.blackguis)
 blacktext.Name = "wait"
-blacktext.Text = "Please Wait"
+blacktext.Text = teletext
 blacktext.BackgroundTransparency = 0.89999997615814
 blacktext.BackgroundColor3 = Color3.new(0, 0, 0)
 blacktext.Size = UDim2.new(1, 0, 0, 30)
