@@ -1,4 +1,3 @@
- getgenv().starttext = "Teleporting To"
      local blackgui = Instance.new('ScreenGui', game.Players.LocalPlayer.PlayerGui.InfinityGUIMain["__Main"].Shop.Box.Infos.Desc.Text)
      blackgui.Name = "blackguis"
      blackgui.ResetOnSpawn = false
