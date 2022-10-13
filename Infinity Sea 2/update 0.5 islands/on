@@ -4,9 +4,10 @@ while _G.loop do
 wait(.1)
 for i, v in pairs(game.Workspace.___Game.__Render:GetChildren()) do
 if v.Name == island then 
-for i, mobss in pairs(v.__Npcs.___Mobs:GetChildren()) do
-if mobss.Name == mob and mobss:WaitForChild("Humanoid").Health >0 then
+for i, mobssss in pairs(v.__Npcs.___Mobs:GetChildren()) do
+if mobssss.Name == mob and mobss:WaitForChild("Humanoid").Health >0 then
        local behindamount = -3.5
+game.Players.LocalPlayer.Character:MoveTo(Vector3.new(mobssss.HumanoidRootPart.CFrame * behindamount))
     game.Players.LocalPlayer.Character:WaitForChild("HumanoidRootPart").CFrame = instance:WaitForChild("HumanoidRootPart").CFrame + instance:WaitForChild("HumanoidRootPart").CFrame.lookVector * behindamount
 end
 end end
