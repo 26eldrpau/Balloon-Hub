@@ -1,10 +1,11 @@
-loadstring(game:HttpGet("https://raw.githubusercontent.com/26eldrpau/Balloon-Hub/main/Infinity%20Sea%202/misc/black%20screen%20inf%20sea"))()
+    getgenv().starttext = "Please Wait"
+    getgenv().teletext = ""
 wait()
 
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame =  game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame + Vector3.new(0,-10)
-wait(.25)
+wait(.5)
 game.Players.LocalPlayer.Character:FindFirstChild("LowerTorso"):Destroy()
-wait(.1)
-game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame =  game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame + Vector3.new(0,10)
+wait(.25)
+game.Players.LocalPlayer.Character.Humanoid.Jump = true
 wait(2.5)
 game.Players.LocalPlayer.PlayerGui.InfinityGUIMain["__Main"].Shop.Box.Infos.Desc.Text.blackguis:Destroy()
