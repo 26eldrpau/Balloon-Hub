@@ -8,7 +8,6 @@ for i, mobssss in pairs(v.__Npcs.___Mobs:GetChildren()) do
 if mobssss.Name == mob and mobss:WaitForChild("Humanoid").Health >0 then
        local behindamount = -3.5
 game.Players.LocalPlayer.Character:MoveTo(Vector3.new(mobssss.HumanoidRootPart.CFrame * behindamount))
-    game.Players.LocalPlayer.Character:WaitForChild("HumanoidRootPart").CFrame = instance:WaitForChild("HumanoidRootPart").CFrame + instance:WaitForChild("HumanoidRootPart").CFrame.lookVector * behindamount
 end
 end end
 end end
