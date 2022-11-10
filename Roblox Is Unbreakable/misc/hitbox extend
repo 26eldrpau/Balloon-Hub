@@ -1,0 +1,12 @@
+wait(1)
+for i,v in pairs(game:GetService("Workspace").NPCs.Hostile:GetDescendants()) do
+   if v:IsA("Part") then
+   if v.Name == "HumanoidRootPart" then
+      v.Size = Vector3.new(500, 500, 500)
+      for i,c in pairs(v:GetChildren()) do
+         if c.Name == "OriginalSize" then
+            c.Value = Vector3.new(500, 500, 500)
+         end
+      end
+   end
+end end
