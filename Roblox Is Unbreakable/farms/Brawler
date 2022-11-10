@@ -4,7 +4,7 @@ while _G.loop do
     wait()
 for _, instance in next, game.workspace.NPCs.Hostile:GetChildren() do
     if instance.Name == "Brawler" and instance:WaitForChild("Humanoid").Health >0 then
-       local behindamount = -7.5
+       local behindamount = -10
     game.Players.LocalPlayer.Character:WaitForChild("HumanoidRootPart").CFrame = instance:WaitForChild("HumanoidRootPart").CFrame + instance:WaitForChild("HumanoidRootPart").CFrame.lookVector * behindamount
 end
 end
