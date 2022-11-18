@@ -1,0 +1,29 @@
+if not game:IsLoaded() then
+    game.Loaded:Wait()
+end
+task.wait(.5)
+local local_player = game:GetService('Players').LocalPlayer
+local_player:WaitForChild('daily_spins_folder')
+local_player.daily_spins_folder:WaitForChild('SpinsToday')
+task.wait(.5)
+local spinamountstuff = game.Players.LocalPlayer.daily_spins_folder.SpinsToday.Value
+
+if game.PlaceId == 5956785391 then
+    if game.Players.LocalPlayer.Slot.Value == 0 then
+        while game.Players.LocalPlayer.Slot.Value == 0 do
+            print("Loading Into Slot")
+            wait(1)
+            game:GetService("ReplicatedStorage").Remotes.Apply_Slot:InvokeServer(1) --slot number to load into
+        end
+    else
+        if spinamountstuff >= 1 then
+            for i = 1, spinamountstuff do
+                print("Spinning")
+                wait()
+                game:GetService("ReplicatedStorage").spins_thing_remote:InvokeServer()
+            end
+        else
+            print("You Have No Daily Spins Left")
+        end
+    end
+end
