@@ -1,0 +1,9 @@
+pcall(function() wait() 
+    for i,v in pairs(game.Workspace:GetDescendants()) do
+    if v.Name == "ShopType" then
+    if v.Value == "Vault" then
+    _G.vaultshit = true
+    else
+    _G.vaultshit = false
+    end end end
+    end)
