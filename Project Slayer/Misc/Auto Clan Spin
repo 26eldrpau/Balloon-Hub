@@ -1,0 +1,23 @@
+clanwanted = {"Rengoku", "Kamado", "Agatsuma"} --can be multiple just put a comma after
+_G.clanss = true
+
+while _G.clanss do
+
+  for i,v in pairs(game.ReplicatedStorage.Player_Data:GetChildren()) do
+      if v.Name == game.Players.LocalPlayer.Name then
+print(v.Clan.Value)
+          if v.Clan == clanwanted then 
+           game:GetService("ReplicatedStorage").do_save_or_123asd:InvokeServer(false)
+             game.StarterGui:SetCore("SendNotification", {
+                Title = "Notification!"; 
+                Text = "Already Have Clan"; 
+                Icon = ""; 
+                Duration = 3; 
+                })
+                local switch = false
+      else
+  game:GetService("ReplicatedStorage").Remotes.To_Server.Handle_Initiate_S_:InvokeServer("check_can_spin")
+      end end end
+  
+   wait(.05)
+end
