@@ -1,0 +1,31 @@
+       _G.augrvait = true
+ 
+       while _G.augrvait do
+            wait()
+            pcall(function() wait() 
+                for i,v in pairs(game.Workspace:GetDescendants()) do
+                    if v.Name == "ShopType" then
+                    if v.Value == "Vault" then
+getgenv().vaultshit = true
+else
+getgenv().vaultshit = false
+
+            for i,c in pairs(v.Parent:GetDescendants()) do
+            if c.Name == "ClickDetector" then
+            game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(c.Parent.Position)
+            for i = 1, 25 do
+                wait()
+            fireclickdetector(c)
+            end
+      else
+
+            for i,b in pairs(game.Workspace.Room.Enemies:GetDescendants()) do
+                print("3")
+            if b.Name == "Button" or b.Name == "RandomizerButton" then
+                print("2")
+            fireclickdetector(b.ClickDetector)
+            print("1")
+            end end end end end end end
+            end)
+          wait()
+       end
