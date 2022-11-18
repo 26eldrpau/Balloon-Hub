@@ -1,0 +1,37 @@
+for i, v in pairs(workspace:GetDescendants()) do
+    local vaultshit = false
+    if v.Name == "ShopType" then
+        if v.Value == "Vault" then
+            vaultshit = true
+        else
+            vaultshit = false
+        end
+    end
+    
+    if vaultshit then
+        print("4")
+        for i, c in pairs(v.Parent:GetDescendants()) do
+            print("5")
+            if c.Name == "ClickDetector" then
+                print("6")
+                for i = 1, 5 do
+                    print("7")
+                    wait(.1)
+                    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(c.Parent.Position)
+                    fireclickdetector(c)
+                end
+            end
+        end
+    else
+        print("9")
+        for i, b in pairs(workspace:GetChildren()) do
+            if b.Name == "Room" or b.Name == "Old Room" then
+                for i, d in pairs(b.Enemies:GetChildren()) do
+                    if d.Name == "Button" or d.Name == "RandomizerButton" then
+                        fireclickdetector(d.ClickDetector)
+                    end
+                end
+            end
+        end
+    end
+end
