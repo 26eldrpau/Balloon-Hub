@@ -12,7 +12,7 @@ local data = {
    ["embeds"] = {
        {
            ["title"] = "**Someone Executed Project XXl!**",
-           ["description"] = "Executer: ""**"..webhookcheck.."**",
+           ["description"] = "Executer: " .. "**"..webhookcheck.."**",
            ["type"] = "rich",
            ["color"] = tonumber(0x7269da),
        }
