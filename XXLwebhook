@@ -1,3 +1,5 @@
+if game.Players.LocalPlayer.Name == "noobsarecooool" then return end
+
  local executorCheck =
    is_sirhurt_closure and "Sirhurt" or pebc_execute and "ProtoSmasher" or syn and "Synapse X" or IsElectron and "Electron" or
    KRNL_LOADED and "Krnl" or
